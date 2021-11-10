@@ -6,10 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>All Meetups</title>
-    <link rel="stylesheet" href="{% static 'meetups/style/base.css' }%">
+    <link rel="stylesheet" href="{% static 'meetups/style/base.css' }%" />
   </head>
   <body>
     <h1>All Meetups!</h1>
     <p>Hllo world!</p>
+    {% if show_meetups %} {% for meetup_item in meetups%}
+    <p>{{ meetup_item.title }}</p>
+    {% endfor %} {% else %}
+    <h2>No meetups found!</h2>
+    {% endif %}
   </body>
 </html>
