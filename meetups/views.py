@@ -34,14 +34,4 @@ def meetup_details(request, meetup_slug):
             'meetup_description': selected_meetup['description']
         })
 
-
-# def meetup_detail(requst, slug_meetup):
-#     print(slug_meetup)
-#     meetups = [{
-#         'title': 'A First Meetup',
-#         'description': 'This is the first meetup!'
-#     }]
-#     return render(request, 'meetups/meetup-datails.html', {
-#         show_meetups: True,
-#         'meeetups': meetup
-#     })
+ 
