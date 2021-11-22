@@ -1,7 +1,7 @@
 from django.contrib import admin
 
-from .models import Meetup, Meetups
+from .models import  Meetups
 
 # Register your models here.
 
-admin.site.register(Meetup)
+admin.site.register(Meetups)
