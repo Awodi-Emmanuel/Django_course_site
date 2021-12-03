@@ -41,13 +41,14 @@
 
   <section id="registeration">
     <h2>Join Us!</h2>
-    <form action="">
+    <form action="{% url 'meet-details' meetup.slug %}" method="POST">
       <ul>
         {{ form.as_ul }}
       </ul>
-      <div id="registeration">
-
+      <div id="registeration-action">
+        <button>Register</button>
       </div>
+
     </form>
   </section>
 </article>
